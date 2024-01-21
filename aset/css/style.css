@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto+Mono:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+:root {
+    --hitam: #000;
+    --putih: #fff;
+    --secondary: #647486;
+    --dark: #0f172a;
+    --dark2: #1e293b;
+    --biru: #14b8a1;
+    --text-tulian: #64748b;
+
+}
+
+body {
+    font-family: 'Kanit', sans-serif !important;
+    /* font-family: 'Roboto Mono', monospace; */
+
+}
+
+.bg-biru {
+    /* background: var(--dark2); */
+}
+
+p.text-biru{
+    color: var(--biru);
+}
+
+.header-bg{
+    background: var(--dark2);
+}
+
+.header-bg a.navbar-brand {
+    color: var(--biru);
+}
+
+.header-bg a.navbar-brand:hover {
+    color: var(--putih);
+    transition: 0, 5s;
+}
+
+.header-bg .nav-item a.nav-link {
+    color: var(--putih);
+}
+
+.header-bg .nav-item a.nav-link:hover {
+    color: var(--secondary);
+    transition: 0, 5s;
+}
+
+/* JUMBOTRON */
+
+#about a{
+    text-decoration: none;
+}
+.icon{
+    border: 1px solid var(--putih);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon i{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    color: var(--putih);
+}
+
+.icon:hover{
+    background: var(--biru);
+    border: 1px solid var(--biru);
+    transition: 0.2s;
+}
+
+/* keahlian */
+#keahlian{
+    background: var(--dark2);
+}
+#keahlian .card h4{
+    color: var(--biru);
+}
+
+.icon2{
+    background: var(--putih);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+    left: -50px;
+    position: absolute;
+    display: flex;
+}
+
+.icon2 i{
+    font-size: 30px;
+    color: var(--biru);
+    margin: 0;
+    padding: 0;
+}
+
+/* projrk */
+
+#projek{
+    background: var(--dark);
+}
+#projek a{
+    text-decoration: none;
+    color: var(--biru);
+}
+#projek a:hover{
+    color: var(--secondary);
+}
+
+#projek h6{
+    color: var(--secondary);
+}
+
+/* client */
+
+#client{
+    background: var(--secondary);
+}
+
+
+.hover-grayscale{
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+.hover-grayscale:hover{
+    filter: grayscale(0%);
+}
+
+/* blog */
+
+#blog{
+    background: var(--dark2);
+}
+
+#blog .btn-selengkapnya{
+    background: var(--biru);
+    color: var(--putih);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-decoration: nones;
+}
+.card a{
+    text-decoration: none;
+}
+
+/* kontak */
+#kontak{
+    background: var(--dark);
+}
+
+#kontak form label{
+    color: var(--biru);
+}
+
+#kontak .btn-kirim{
+    background: var(--biru);
+    border-radius: 50px;
+    color: var(--putih);
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+/* footer */
+#footer{
+    background: var(--dark2);
+}
+
+#footer .logo-brand{
+    color: var(--biru);
+}
+
+#footer .kategori ul li a{
+    text-decoration: none;
+    color: var(--putih);
+
+}
+#footer .kategori ul li a:hover{
+    color: var(--biru);
+    transition: 0.5s;
+}
+#footer .hubungi a{
+    color: var(--biru);
+    text-decoration: none;
+}
+
+#footer .icon-footer a{
+    text-decoration: none;
+}
+
+/* responsive */
+@media only screen and (max-width:400px){
+    #keahlian .card{
+        width: 300px;
+    }
+
+    #keahlian .icon2{
+        width: 80px;
+        height: 80px;
+    }
+
+    #keahlian .icon2 i{
+        font-size: 20px;
+    }
+
+    #keahlian .geser{
+        margin-left: 13px;
+    }
+}
